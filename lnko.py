@@ -16,8 +16,7 @@ def lnko(a, b):
 
     return eredmeny
 
-a = int(input())
-b = int(input())
+a = input()
 
-pair = lnko(a, b)
+pair = lnko(int(a.split()[0]), int(a.split()[1]))
 print(*pair)
