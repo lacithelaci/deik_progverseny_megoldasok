@@ -7,10 +7,14 @@ while True:
 
 lista2 = []
 while True:
-    i = input().split()
-    if i == []:
+    try:
+        i = input().split()
+        if i == []:
+            break
+        lista2.append(i)
+    except EOFError:
         break
-    lista2.append(i)
+
 
 lehetseges = True
 lista3 = []
