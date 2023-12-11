@@ -18,10 +18,13 @@ veszkijaratszam = int(masodik_sor[1])
 veszkijaratok = list(map(int, input().strip().split()))
 lista = []
 while True:
-    i = input()
-    if i == "":
+    try:
+        i = input()
+        if i == "":
+            break
+        lista.append(i.strip())
+    except EOFError:
         break
-    lista.append(i.strip())
 
 db = 0
 osszeg = [sum(kiszamito(jegy_alapar, dragulas, index, ablakos_felar, veszkijaratok, veszkijaratos_ar, i) for index, i in
