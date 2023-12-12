@@ -9,7 +9,7 @@ def y_tengelyes_parhuzamossag(lista):
     a = lista[0]
     b = lista[1]
     c = lista[2]
-    return a[2] == c[0] and a[1] == c[1] and a[0] == c[2] and b == b[::-1]
+    return a[2] == c[0] and a[1] == c[1] and a[0] == c[2] and b == b[::-1] and b!="ooo"
 
 
 def o_szam(lista):
